@@ -1,0 +1,29 @@
+### Ubuntu Docker Setup & Test
+
+# Install Docker
+sudo apt install docker.io -y
+
+# Create docker app folder
+cd ~
+mkdir projects
+cd projects
+
+# Create Dockerfile and website
+echo "Hello World from my docker web application!" > index.html
+echo "FROM httpd:2.4" > Dockerfile
+echo "COPY index.html /usr/local/apache2/htdocs/" >> Dockerfile
+
+# Run Docker app
+docker
+sudo docker build -t mywebapp .
+sudo docker run -d --name mywebapp1 -p 8080:80 mywebapp
+xdg-open http://127.0.0.1:8080
+
+# List Docker images and stop running image
+sudo docker images
+sudo docker stats --no-stream
+sudo docker ps
+
+sudo docker stop mywebapp1
+sudo docker ps
+sudo docker rm mywebapp1

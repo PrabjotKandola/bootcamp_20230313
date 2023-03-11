@@ -1,0 +1,18 @@
+Azure Maps Tutorials:
+https://github.com/Azure-Samples/AzureMapsCodeSamples/tree/main/Samples/Tutorials
+
+Create Store Locator with Azure Maps:
+https://learn.microsoft.com/en-us/azure/azure-maps/tutorial-create-store-locator
+
+Weather Data APIs:
+https://openweathermap.org/api
+https://open-meteo.com/en
+
+Earthquake Data APIs:
+https://apps.nationalmap.gov/tnmaccess/#/
+https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson
+
+Real Estate Data APIs:
+https://www.walkscore.com/professional/api.php
+https://www.zillowgroup.com/developers/public-data/
+https://developers.google.com/maps/documentation/javascript/get-api-key
