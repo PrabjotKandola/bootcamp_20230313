@@ -1,0 +1,67 @@
+###  MongoDB Installation
+# PS1="\u@\h:\w\$ "
+
+# Install Ubuntu Updates
+sudo su
+
+apt update -y | apt upgrade -y
+
+
+### Option 1: Manual install of a stable release:
+
+# Import Public GPG key
+curl -fsSL https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
+
+# Create mongodb-org-4.4.list file and update the system
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
+apt update -y | apt upgrade -y
+
+# Install MongoDB and MongoSH
+apt install mongodb-org -y
+apt install mongosh -y
+
+# Start MongoDB 
+systemctl start mongod
+systemctl status mongod
+# Verify that the status of mongod is "active (running)".  If necessary, use Ctrl+C to end the command.
+
+# Enable MongoDB
+systemctl enable mongod
+
+# Verify MongoDB and MongoSH are working
+mongo --eval 'db.runCommand({ connectionStatus: 1 })'
+mongosh
+
+# Install Compass.  Perform this step as a regular user.  Not root.  If errors persists, run the commands in a new terminal window.
+# sudo apt install mongodb-compass -y
+# mongodb-compass
+wget https://downloads.mongodb.com/compass/mongodb-compass_1.33.1_amd64.deb
+sudo dpkg -i mongodb-compass_1.33.1_amd64.deb
+mongodb-compass
+
+# Optional Steps: 
+1. Create a database and collection using mongodb-compass
+2. Create a MongoDB Database and collection with the CLI: https://www.mongodb.com/basics/create-database
+
+===   
+ 
+### Option 2: Use installation instructions on docs.mongodb.com website for Ubuntu:
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

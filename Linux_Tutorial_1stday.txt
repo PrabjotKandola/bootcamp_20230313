@@ -1,0 +1,31 @@
+Perform the following tasks on Linux:
+
+
+1.  Get help on how to run the "ls" command
+
+2.  Go to your home directory
+
+3.  List all hidden files in your home directory
+
+4.  Create a folder in your home directory named "temp" (Remember, Linux commands are case-sensitive)
+
+5.  Move to your new "temp" folder
+
+6.  Create a file named "test1.txt".  Add the line "This is a test" to the file.
+
+7.  Copy "test1.txt" to "test2.txt" in the same folder.
+
+8.  Rename "test2.txt" to "test22.txt"
+
+9.  Create an alias that clears the screen and give it the name "cls"
+
+10. Create a path configuration (PS1) that shows the user name, computer name and folder path
+
+11. Update the packages on your system
+
+12. Using root privileges, install and test the Chrome browser
+
+13. Create a user using your first name.  
+
+14. Test the account in a terminal window.
+
