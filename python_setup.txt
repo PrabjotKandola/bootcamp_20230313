@@ -1,0 +1,34 @@
+1. Version: Python 3.9 
+    Windows: www.python.org 
+    Ubuntu:  sudo apt install python3.9 -y && sudo apt-alternatives --install /usr/bin/python python /usr/bin/python3.9 1)
+
+2. Do full installations.  Python resources should be accessible by all users.
+
+3. If necessary install and verify configuration of pip 
+    Windows: curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+             python get-pip.py
+    Ubuntu:  sudo apt install python3-pip
+
+4. Test the installation of a Python module using pip:  pip install pandas
+
+5. Install LibreOffice on all machines 
+    Windows: www.libreoffice.org
+    Ubuntu:  Should be installed already: (sudo apt install libreoffice)
+
+Notes:
+Use the "Project" machine for experimenting and testing applications.  Reconfigure it in any way that helps with your end of bootcamp project.
+Windows Login: student / Password1
+Ubuntu Login:  student / password
+MySQL Login:   root / password
+
+Recommendataions:
+https://nicegui.io/
+https://flask.palletsprojects.com/en/2.2.x/
+https://gradio.app/
+https://pypi.org/project/pyodbc/
+https://www.pymssql.org/
+https://learn.microsoft.com/en-us/azure/app-service/tutorial-python-postgresql-app?tabs=flask%2Cwindows
+https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-azure-ml-in-a-day
+https://tinyurl.com/2k6n2xon
+https://www.youtube.com/@GitHub
+https://learn.microsoft.com/en-us/training/paths/azure-linux/
