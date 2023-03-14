@@ -103,6 +103,7 @@ jps
 
 # Access Hadoop NameNode UI from a browser using a new terminal window (do not use elevated privileges) 
 # Browse the different options / features available and verify the number of "Live Nodes"
+# You can verify the system is listening on port 9870: netstat -an | grep 9870
 xdg-open http://127.0.0.1:9870
 
 # Reboot the server when finished.
