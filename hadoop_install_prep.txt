@@ -27,7 +27,7 @@ ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 chmod 0600 ~/.ssh/authorized_keys
 
-# Test SSH to localhost: Close existing terminal window and run these commands in a new terminal window.
+# Test SSH to localhost: Close existing terminal windows and run these commands in a new terminal window.
 ssh localhost
 exit
 
