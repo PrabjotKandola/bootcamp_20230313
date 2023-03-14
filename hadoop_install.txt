@@ -34,7 +34,7 @@ export YARN_RESOURCEMANAGER_USER="root"
 export YARN_NODEMANAGER_USER="root"
 
 # Persist the changes from the .bashrc file
-source ~/.bashrc
+source /home/student/.bashrc
 
 # Add the following line to the file: $HADOOP_HOME/etc/hadoop/hadoop-env.sh 
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
