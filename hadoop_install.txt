@@ -16,7 +16,7 @@ wget https://downloads.apache.org/hadoop/common/hadoop-3.3.2/hadoop-3.3.2.tar.gz
 # Extract package
 tar -xvf hadoop-3.3.2.tar.gz
 
-# Add the following lines at the end of the /home/student/.bashrc file
+# Add the following lines to the file: /home/student/.bashrc 
 export HADOOP_HOME=/root/hadoop/hadoop-3.3.2
 export HADOOP_INSTALL=$HADOOP_HOME
 export HADOOP_MAPRED_HOME=$HADOOP_HOME
@@ -36,10 +36,10 @@ export YARN_NODEMANAGER_USER="root"
 # Persist the changes from the .bashrc file
 source /home/student/.bashrc
 
-# Add the following line to the file: $HADOOP_HOME/etc/hadoop/hadoop-env.sh 
+# Add the following lines to the file: $HADOOP_HOME/etc/hadoop/hadoop-env.sh 
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 
-# Add the following text to $HADOOP_HOME/etc/hadoop/core-site.xml (between the <configuration> and </configuration> tags
+# Add the following lines to the file: $HADOOP_HOME/etc/hadoop/core-site.xml (between the <configuration> and </configuration> tags
 <property>
   <name>hadoop.tmp.dir</name>
   <value>/tempdata</value>
@@ -49,7 +49,7 @@ export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
   <value>hdfs://127.0.0.1:9000</value>
 </property>
 
-# Add the following line to the file: $HADOOP_HOME/etc/hadoop/hdfs-site.xml (between the <configuration> and </configuration> tags
+# Add the following lines to the file: $HADOOP_HOME/etc/hadoop/hdfs-site.xml (between the <configuration> and </configuration> tags
 <property>
   <name>dfs.data.dir</name>
   <value>/home/hiberstack/dfsdata/namenode</value>
@@ -64,13 +64,13 @@ export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 </property>
 
 
-# Add the following line to the file: $HADOOP_HOME/etc/hadoop/mapred-site.xml (between the <configuration> and </configuration> tags
+# Add the following lines to the file: $HADOOP_HOME/etc/hadoop/mapred-site.xml (between the <configuration> and </configuration> tags
 <property> 
   <name>mapreduce.framework.name</name> 
   <value>yarn</value> 
 </property>
 
-# Add the following line to the file: $HADOOP_HOME/etc/hadoop/yarn-site.xml (between the <configuration> and </configuration> tags
+# Add the following lines to the file: $HADOOP_HOME/etc/hadoop/yarn-site.xml (between the <configuration> and </configuration> tags
 <property>
   <name>yarn.nodemanager.aux-services</name>
   <value>mapreduce_shuffle</value>
