@@ -16,7 +16,7 @@ wget https://downloads.apache.org/hadoop/common/hadoop-3.3.2/hadoop-3.3.2.tar.gz
 # Extract package
 tar -xvf hadoop-3.3.2.tar.gz
 
-# Add the following lines to the file: /home/student/.bashrc 
+# Add the following lines to the file: /root/.bashrc 
 export HADOOP_HOME=/root/hadoop/hadoop-3.3.2
 export HADOOP_INSTALL=$HADOOP_HOME
 export HADOOP_MAPRED_HOME=$HADOOP_HOME
@@ -34,7 +34,7 @@ export YARN_RESOURCEMANAGER_USER="root"
 export YARN_NODEMANAGER_USER="root"
 
 # Persist the changes from the .bashrc file
-source /home/student/.bashrc
+source /root/.bashrc
 
 # Add the following lines to the file: $HADOOP_HOME/etc/hadoop/hadoop-env.sh 
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
@@ -101,9 +101,9 @@ hdfs namenode -format
 $HADOOP_HOME/sbin/start-all.sh
 jps
 
-# Access Hadoop NameNode UI from Browser 
+# Access Hadoop NameNode UI from a browser using a new terminal window (do not use elevated privileges) 
 # Browse the different options / features available and verify the number of "Live Nodes"
-http://127.0.0.1:9870
+xdg-open http://127.0.0.1:9870
 
 # Reboot the server when finished.
 # reboot
