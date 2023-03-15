@@ -1,0 +1,21 @@
+### Getting Started with OpenAI on Azure:
+
+ChatGPT & OpenAI powering your apps | OpenAI Studio in Microsoft Azure:
+https://youtu.be/3t3qZu1Dy1k
+
+Unleash the Power of Azure OpenAI Service with AI Builder:
+https://youtu.be/1Cz9F0EdSUo
+
+How to easily add AI to your applications | Azure AI Essentials:
+https://youtu.be/Kg4nKWDo6OQ
+
+Introduction to Azure OpenAI Service:
+https://learn.microsoft.com/en-us/training/modules/explore-azure-openai/
+
+Get started generating text using Azure OpenAI Service:
+https://learn.microsoft.com/en-us/azure/cognitive-services/openai/quickstart?pivots=programming-language-python
+
+AI & ML Academy:
+https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy
+
+
