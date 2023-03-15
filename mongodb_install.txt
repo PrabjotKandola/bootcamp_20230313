@@ -1,7 +1,12 @@
 ###  MongoDB Installation
-# PS1="\u@\h:\w\$ "
+### PS1="\u@\h:\w\$ "
 
-# Install Ubuntu Updates
+### Windows Install:
+Install MongoDB on Windows: https://www.geeksforgeeks.org/how-to-install-mongodb-on-windows/
+Install MongoDB Compass:    https://www.geeksforgeeks.org/install-mongodb-compass-on-windows/?ref=rp
+
+
+### Install Ubuntu Updates
 sudo su
 
 apt update -y | apt upgrade -y
