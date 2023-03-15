@@ -1,0 +1,19 @@
+### Instructions for doing Digital Ocean Install:
+
+1. Use elevated privileges. (sudo su)
+
+2. Go to the hadoop folder (cd /root/hadoop)
+
+3. Stop all hadoop services ($HADOOP_HOME/sbin/stop-all.sh)
+
+4. Remove the hadoop references in /root/.bashrc.  These are lines 22-36 in the setup instructions. (gedit /root/.bashrc)
+
+5. Go to your home directory (cd ~)
+
+6. Remove hadoop folder (rm -rf hadoop)
+
+7. Restart or reset the Linux virtual machine
+
+8. Use Digital Ocean Hadoop setup instructions: https://www.digitalocean.com/community/tutorials/how-to-install-hadoop-in-stand-alone-mode-on-ubuntu-20-04
+
+  
