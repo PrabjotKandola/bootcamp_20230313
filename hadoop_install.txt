@@ -1,7 +1,9 @@
 ###  Hadoop Installation
-###  Windows Install: 
+###  Ubuntu:
+###  https://www.digitalocean.com/community/tutorials/how-to-install-hadoop-in-stand-alone-mode-on-ubuntu-20-04
+###  Windows: 
 ###  https://medium.com/analytics-vidhya/hadoop-how-to-install-in-5-steps-in-windows-10-61b0e67342f8 
-###  or https://cwiki.apache.org/confluence/display/HADOOP2/Hadoop2OnWindows
+###  https://cwiki.apache.org/confluence/display/HADOOP2/Hadoop2OnWindows
 
 # Connect as super user (root)
 # PS1="\u@\h:\w\$ "
@@ -104,6 +106,7 @@ jps
 # Access Hadoop NameNode UI from a browser using a new terminal window (do not use elevated privileges) 
 # Browse the different options / features available and verify the number of "Live Nodes"
 # You can verify the system is listening on port 9870: netstat -an | grep 9870
+# If necessary, disable the firewall: sudo ufw disable
 xdg-open http://127.0.0.1:9870
 
 # Reboot the server when finished.
